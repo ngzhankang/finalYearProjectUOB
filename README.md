@@ -1,7 +1,3 @@
-# finalYearProjectUOB
-Year 3 Semester 1 FYP Project For SP/UOB DSDA Module 
-
-
 # ST1506 : DATA STRUCTURE AND DIGITAL ANALYTICS FINAL YEAR PROJECT
 
 # Synopsis

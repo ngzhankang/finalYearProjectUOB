@@ -8,8 +8,8 @@ This repository is to host the notebook that contributing members did for this m
 1. The notebook can be found at [here](./Assignment_2.ipynb)
 
 # Contributors
-- Ang Yak Hng
-- Teo Swee Hong Winson
+- Ang Yak Hng (Group Leader)
+- Teo Swee Hong Winson (Assistant Group Leader)
 - Ng Zhan Kang
 - Loh Cherng Jun Triston
 - Ng Ao Yang

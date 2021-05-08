@@ -73,7 +73,7 @@ def predict(df):
 
     for row in processed.swapaxes(0, 1):
         for i in range(len(row)):
-            print(f'{classes[i][int(row[i][0])]: <40} | {round(row[i][1] * 100, 2) : >9}%')
+            print(f'{classes[i][int(row[i][0])]: <40.40} | {row[i][1] * 100: >9.4}%')
         
         print('\n' + '-'*22 + '\n')
 

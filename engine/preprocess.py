@@ -59,6 +59,10 @@ nlp.add_pipe('custom_preprocess', last=True)
 
 # === MAIN PREPROCESS FUNCTION === #
 def preprocess(df, keywords):
+    # clean dataset
+    df.dropna(axis=0, how='any', subset=['Company Profile Information'], inplace=True)
+    df['Company Profile Information'] = df['Company Profile Information'].astype(str)
+
     # do tokenisation on df
     processed_doc = list(nlp.pipe(df['Company Profile Information']))
     df['processed'] = [doc._.processed for doc in processed_doc]

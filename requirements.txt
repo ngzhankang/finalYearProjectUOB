@@ -6,7 +6,7 @@ catalogue==2.0.4
 certifi==2020.12.5
 chardet==4.0.0
 click==7.1.2
-cupy-cuda110==8.6.0
+cupy-cuda101==8.6.0
 cymem==2.0.5
 en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.0.0/en_core_web_lg-3.0.0-py3-none-any.whl
 et-xmlfile==1.1.0

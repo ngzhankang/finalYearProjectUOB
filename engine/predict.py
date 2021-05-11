@@ -5,15 +5,15 @@ import numpy as np
 from preprocess import preprocess
 
 # load models
-sector_model = load_model('engine/weights/model_1')
-subsector_model = load_model('engine/weights/model_2')
-archetype_model = load_model('engine/weights/model_3')
-valuechain_model = load_model('engine/weights/model_4')
+sector_model = load_model('./weights/model_1')
+subsector_model = load_model('./weights/model_2')
+archetype_model = load_model('./weights/model_3')
+valuechain_model = load_model('./weights/model_4')
 
 models = [sector_model, subsector_model, archetype_model, valuechain_model]
 
 # import sector master definition file
-df_keywords = pd.read_excel('engine/sector_master_definition.xlsx')
+df_keywords = pd.read_excel('./sector_master_definition.xlsx')
 
 # preprocess dataset
 df_keywords.drop(['Explanations', 'Notes'], axis=1, inplace=True)

@@ -1,4 +1,8 @@
 .ipynb-checkpoints
 .vscode
+<<<<<<< HEAD
 engine/__pycache__
+=======
+/engine/__pycache__
+>>>>>>> main
 env

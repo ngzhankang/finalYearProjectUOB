@@ -5,7 +5,7 @@ import numpy as np
 from preprocess import preprocess
 
 # load models
-model = load_model('engine/weights/multilabel_model')
+model = load_model('./weights/multilabel_model')
 
 # import sector master definition file
 df_keywords = pd.read_excel('engine/sector_master_definition.xlsx')

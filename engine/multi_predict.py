@@ -64,7 +64,9 @@ def predict(df):
     print('Prediction' + ' '*31 + '| Confidence')
     print('-'*53 + '\n')
 
-    for row in processed.swapaxes(0, 1):
+    for index, row in enumerate(processed.swapaxes(0, 1)):
+        print('Company:', df['Company'].iloc[index], '\n')
+
         for i in range(len(row)):
             print(f'{classes[i][int(row[i][0])]: <40.40} | {row[i][1] * 100: >9.4}%')
         

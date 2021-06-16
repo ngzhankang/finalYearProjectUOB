@@ -2,3 +2,5 @@
 .vscode
 /engine/__pycache__
 env
+clean_dataset.xlsx
+sector_master_definition.xlsx

@@ -1,5 +1,6 @@
-.ipynb-checkpoints
+.ipynb_checkpoints
 .vscode
+.idea
 /engine/__pycache__
 env
 clean_dataset.xlsx

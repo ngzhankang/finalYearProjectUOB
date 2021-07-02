@@ -16,8 +16,6 @@ empty = data_df[data_df[['Sector', 'Subsector', 'Archetype', 'Valuechain', 'Comp
 clean_df = pd.concat([data_df, empty, empty]).drop_duplicates(keep=False)
 
 clean_df['Sector'] = [i.upper() for i in clean_df['Sector'].values.astype(str).tolist()]
-clean_df['Subsector'] = [i.upper() for i in clean_df['Subsector'].values.astype(str).tolist()]
-clean_df['Archetype'] = [i.upper() for i in clean_df['Archetype'].values.astype(str).tolist()]
 clean_df['Valuechain'] = [i.upper() for i in clean_df['Valuechain'].values.astype(str).tolist()]
 
 
@@ -33,9 +31,7 @@ sample_stats = ''
 print(f'label\t\t\t\t\tcount\tpercent')
 for label in sector:
     subset = clean_df[clean_df['Sector'] == label]
-    subsector = sorted(list(set([i.upper() for i in definition_df['Subsector'][definition_df['Sector'] == label].values.tolist()])))
-    archetype = sorted(list(set([i.upper() for i in definition_df['Archetype'][definition_df['Sector'] == label].values.tolist()])))
-    valuechain = sorted(list(set([i.upper() for i in definition_df['Value Chain'][definition_df['Sector'] == label].values.tolist()])))
+    subsector = sorted(list(set(definition_df['Subsector'][definition_df['Sector'] == label].values.tolist())))
 
     # split off 200 records from each sector
     split_df_sample = subset.sample(200)

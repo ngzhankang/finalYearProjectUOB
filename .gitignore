@@ -5,3 +5,5 @@
 env
 *.xlsx
 /engine/files/*
+*.zip
+doc2vec_model

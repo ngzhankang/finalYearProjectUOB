@@ -24,7 +24,7 @@ def preprocess(df):
                     return_attention_mask=True, # generate attention mask
                     verbose=True)
 
-    print(bert_tokens)
+    tokens_labels = bert_tokens.copy()
 
     # return BERT tokens
-    return bert_tokens
+    return dict(tokens_labels)

@@ -5,3 +5,4 @@ env
 *.xlsx
 /engine/files/*
 *.zip
+.idea

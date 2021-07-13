@@ -5,10 +5,10 @@ import numpy as np
 from bert_preprocess import preprocess
 
 # load models
-model = load_model('./weights/bert')
+model = load_model('.\\weights\\bert')
 
 # import sector master definition file
-df_keywords = pd.read_excel('./sector_master_definition.xlsx')
+df_keywords = pd.read_excel('.\\sector_master_definition.xlsx')
 
 # preprocess dataset
 df_keywords.drop(['Explanations', 'Notes'], axis=1, inplace=True)

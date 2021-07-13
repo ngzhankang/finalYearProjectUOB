@@ -1,18 +1,7 @@
 .ipynb_checkpoints
 .vscode
-<<<<<<< HEAD
-.idea
 /engine/__pycache__
 env
 *.xlsx
 /engine/files/*
 *.zip
-doc2vec_model
-=======
-<<<<<<< HEAD
-engine/__pycache__
-=======
-/engine/__pycache__
->>>>>>> main
-env
->>>>>>> windows

@@ -24,5 +24,7 @@ def preprocess(df):
                     return_attention_mask=True, # generate attention mask
                     verbose=True)
 
+    print(bert_tokens)
+
     # return BERT tokens
     return bert_tokens

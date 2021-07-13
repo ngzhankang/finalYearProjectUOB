@@ -14,6 +14,7 @@ fastrlock==0.6
 filelock==3.0.12
 flatbuffers==1.12
 gast==0.4.0
+gensim==4.0.1
 google-auth==1.30.0
 google-auth-oauthlib==0.4.4
 google-pasta==0.2.0
@@ -62,6 +63,7 @@ tensorboard==2.5.0
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.0
 tensorflow==2.5.0rc3
+tensorflow-addons==0.13.0
 tensorflow-estimator==2.5.0rc0
 termcolor==1.1.0
 thinc==8.0.3
@@ -69,6 +71,7 @@ tokenizers==0.10.2
 torch==1.8.1
 tqdm==4.60.0
 transformers==4.5.1
+typeguard==2.12.1
 typer==0.3.2
 typing-extensions==3.7.4.3
 urllib3==1.26.4

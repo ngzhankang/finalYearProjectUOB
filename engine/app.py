@@ -1,10 +1,10 @@
 import pandas as pd
-from multi_predict import predict
+from bert_predict import predict
 
-df_test = pd.read_excel('engine/files/input.xlsx')
+df = pd.read_excel('./files/input.xlsx')
 
 # do prediction
-df_test = predict(df_test)
+df = predict(df)
 
 # write results to excel file
-df_test.to_excel('engine/files/output.xlsx', index=False)
+df.to_excel('./files/output.xlsx', index=False)

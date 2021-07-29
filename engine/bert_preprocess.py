@@ -9,6 +9,9 @@ tokenizer = BertTokenizerFast.from_pretrained(pretrained_model_name_or_path='ber
 
 # === MAIN PREPROCESS FUNCTION === #
 def preprocess(df):
+    # track number of rows dropped
+    dropped_rows = df.index[df['Company Profile Information'].isna()].tolist()
+    
     # clean dataset
     df.dropna(axis=0, how='any', subset=['Company Profile Information'], inplace=True)
     df['Company Profile Information'] = df['Company Profile Information'].astype(str)
@@ -26,5 +29,5 @@ def preprocess(df):
 
     tokens_labels = bert_tokens.copy()
 
-    # return BERT tokens
-    return dict(tokens_labels)
+    # return BERT tokens and dropped rows
+    return dict(tokens_labels), dropped_rows

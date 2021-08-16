@@ -52,7 +52,7 @@ for label in sector:
 
     clean_stats += '-'*55 + '\n'
     sample_stats += '-'*55 + '\n'
-    
+
 # print stats
 print(clean_stats)
 print(f'{"Sampled Subset":^55.55}\n{"-"*55}')

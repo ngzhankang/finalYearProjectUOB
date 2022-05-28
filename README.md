@@ -11,6 +11,24 @@ Here are the relatively breakthrough training notebooks that we have experimente
 2. [NLP_MLP_Multilabel](./training/NLP_MLP_Multilabel.ipynb)
 3. [NLP_VDCNN_Multilabel](./training/NLP_VDCNN_Multilabel.ipynb)
 
+# Repository Structure
+```
+finalYearProjectUOB
+|__ .idea
+|__ .ipynb_checkpoints
+|__documentaion
+|   |__ phase 1 (Check out all the relevent documentations for phase 1 of the project here!)
+|   |__ phase 2 (Check out all the relevent documentations for phase 2 of the project here!)
+|
+|__ engine (This is the python scripts to run our engine.)
+|__ training (All the jupyter notebook NLP model and experiemnts we've tried can all be found here.)
+|__ .gitignore
+|__ =12
+|__ LICENSE
+|__ README.md
+|__requirements.txt
+```
+
 # Keeping your python environment clean (Optional, but recommended)
 To keep this project from dirtying your python environment, you can follow these instructions.
 1. After cloning into the repository, run `python -m venv env`
@@ -26,8 +44,6 @@ To keep this project from dirtying your python environment, you can follow these
 3. Run `cd engine` and run `python app.py` to start executing code.
 
 # Contributors
-- [Ang Yak Hng (Group Leader)](https://github.com/yakisoap-bar)
-- [Teo Swee Hong Winson (Assistant Group Leader)](https://github.com/Geceju)
-- [Ng Zhan Kang](https://github.com/ngzhankang)
-- [Loh Cherng Jun Triston](https://github.com/Triston24)
-- [Ng Ao Yang](https://github.com/ngaouang)
+<a href="https://github.com/ngzhankang/finalYearProjectUOB/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ngzhankang/finalYearProjectUOB" />
+</a>
